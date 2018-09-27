@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset="UTF-8">
+		
+		<title>互联网＋  实验室体制改革建议区</title>
+		<link rel="stylesheet" href="../static/themes/css/all.css"/>
+	</head>
+	<body > 
+
+			<div class="fixed-l" align="center">
+		
+   <img style="width: 100%;height: 100%;" src="../img/lab.jpg"/>
+             </div>
+             <div class="fixed-r" align="center">
+		
+   <img style="width: 100%;height: 100%;" src="../img/lab.jpg"/>
+             </div>
+			
+			<div id="bbd" style="position: absolute;">
+				
+		
+			<div id="headline" style="width:100%;height:auto; ">
+			<img id="header1" src="../img/header.png"/>
+			</div>
+			<hr />
+			<div align="center">
+				<form action="{{ url_for('index') }}" method="POST">
+				<input type="text" name="resigntxt" value='1' style="display: none;"/>
+				<input id="turn" type="submit" value="点此新增留言"></input>
+			</form>
+			</div>
+				
+			<div align="center" id="text">
+				 
+                     <table border="2" align="center" >
+                         <thead>
+                         <tr>
+                             <th>留言内容</th>
+                             <th>留言时间</th>
+                         </tr>
+                         </thead>
+                         <tbody>
+                         {% for say in says %}
+                             <tr>
+                                 <td>{{ say['txt'] }}</td>
+                                 <td>{{ say['date'] }}</td>
+                             </tr>
+                         {% endfor %}
+                         </tbody>
+                     </table>
+			</div>
+		
+		
+			
+		</div>
+		</div>
+		
+	</body>
+</html>

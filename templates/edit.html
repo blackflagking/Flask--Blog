@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<title>互联网＋  实验室体制改革编辑区</title>
+		<link rel="stylesheet" href="../static/themes/css/all.css"/>
+		
+			<div id="headline" style="width:100%;height:auto; ">
+			<img id="header1" src="../img/header.png"/>
+			</div>
+			<hr />
+	</head>
+	<body>
+		<div class="fixed-l" align="center">
+		
+   <img style="width: 100%;height: 100%;" src="../img/lab.jpg"/>
+             </div>
+             <div class="fixed-r" align="center">
+		
+   <img style="width: 100%;height: 100%;" src="../img/lab.jpg"/>
+             </div>
+		<div id="countents">
+				<div id="headline" align="right" style=" margin: 5px;">
+					<font>请在下方输入您的意见或是<a style="color: white; text-decoration: none;" href="index.html">返回留言板首页</a></font>
+					
+				</div>
+			<div id="editidea" align="center">
+				 <form action="{{ url_for('edit') }}" method="POST" >
+				 	<textarea name="ideatxt" id="ideatxt" placeholder="请在这里填写您对实验室的意见或者建议" style="font-size: 15px;"></textarea> <br />
+				 	<input id="send" type="submit" value="点此提交"></input>
+						 </form>
+						 
+			</div>
+		</div> 
+		<script>
+		     function back1(){
+		     	onclick=window.location.href="index.html";
+		     }
+
+		</script>
+	</body>
+</html>
