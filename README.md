@@ -1,3 +1,7 @@
-# flask--blog-program、
-这是一个简单地留言版小程序
-应用flask框架
+# flask--blog  
+### 作者:coresu  
+### 时间:2017:10:8  
+
+## 应用框架：flask
+简单的一个留言版小程序
+应用flask框架来收取实验室对规章制度的建议。
