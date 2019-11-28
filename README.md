@@ -58,7 +58,7 @@ python blogs.py
 
 
 
-![公众号](./Object--Picture/vxplatform.png) 
+![公众号](./Object--Picture/vxplatform.jpg) 
 
 
 
